@@ -21,6 +21,7 @@
   background: #fff;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 4fr 2fr 2fr;
+  gap: 1rem;
 }

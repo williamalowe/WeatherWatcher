@@ -1,0 +1,6 @@
+.card {
+  height: 100%;
+  width: 100%;
+  background: var(--primary-blue);
+  border-radius: 1rem;
+}
