@@ -1,5 +1,5 @@
 body {
-	background: #00b4ff;
+	background: var(--primary-blue);
 	color: #333;
 	font: 100% Arial, Sans Serif;
 	height: 100vh;

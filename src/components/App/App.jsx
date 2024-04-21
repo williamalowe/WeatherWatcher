@@ -1,6 +1,7 @@
 import Cloudbg from '../../../../WeatherWise/v2/src/components/Cloudbg/Cloudbg';
 import styles from './App.module.css';
 import useWeatherData from '../../hooks/useWeatherData/useWeatherData';
+import LocationSearchbar from '../LocationSearchbar/LocationSearchbar';
 
 const App = () => {
   const { weatherData, error, loading } = useWeatherData();
@@ -15,7 +16,7 @@ const App = () => {
           {/* Main Content */}
         </div>
         <div className={styles.sidebar}>
-          
+          <LocationSearchbar />
         </div>
       </div>
     </main>
