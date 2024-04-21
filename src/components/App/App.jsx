@@ -10,7 +10,14 @@ const App = () => {
       <div className={styles.background}>
         <Cloudbg />
       </div>
-      
+      <div className={styles.content}>
+        <div className={styles.main}>
+          {/* Main Content */}
+        </div>
+        <div className={styles.sidebar}>
+          
+        </div>
+      </div>
     </main>
   )
 }
