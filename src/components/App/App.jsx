@@ -12,15 +12,20 @@ const App = () => {
       <div className={styles.background}>
         <Cloudbg />
       </div>
-      <div className={styles.content}>
-        <div className={styles.main}>
-          {/* Main Content */}
-        </div>
-        <div className={styles.sidebar}>
-          <LocationSearchbar />
-          <CurrentWeather />
-        </div>
-      </div>
+      {
+        loading ? <>Loading</> : 
+          <div className={styles.content}>
+            <div className={styles.main}>
+              {/* Main Content */}
+            </div>
+            <div className={styles.sidebar}>
+              <LocationSearchbar />
+              <CurrentWeather
+                data={weatherData}
+              />
+            </div>
+          </div>
+      }
     </main>
   )
 }
