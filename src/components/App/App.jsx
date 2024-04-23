@@ -3,6 +3,9 @@ import styles from './App.module.css';
 import useWeatherData from '../../hooks/useWeatherData/useWeatherData';
 import LocationSearchbar from '../LocationSearchbar/LocationSearchbar';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
+import HourlyForecast from '../HourlyForecast/HourlyForecast';
+import ForecastList from '../ForecastList/ForecastList';
+import Sunrise from '../Sunrise/Sunrise';
 
 const App = () => {
   const { weatherData, error, loading } = useWeatherData();
@@ -22,6 +25,14 @@ const App = () => {
               <LocationSearchbar />
               <CurrentWeather
                 data={weatherData}
+              />
+              <ForecastList 
+                weatherData={weatherData}
+              />
+              <Sunrise 
+                sunrise={weatherData.forecast.forecastday[0].astro.sunrise}
+                sunset={weatherData.forecast.forecastday[0].astro.sunset}
+
               />
             </div>
           </div>

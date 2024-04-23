@@ -5,13 +5,13 @@ import { faSearch, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 const LocationSearchbar = () => {
   return (
     <div className={styles.searchbar}>
-      <div className={styles.search_icon}>
+      <div className={styles.left_icon}>
         <FontAwesomeIcon icon={faSearch} />
       </div>
       <input type="text" placeholder='Search Locations...'/>
-      <div className={styles.location_icon}>
-        <FontAwesomeIcon icon={faLocationDot} />
-      </div>
+    <div className={styles.right_icon}>
+      <FontAwesomeIcon icon={faLocationDot} />
+    </div>
     </div>
   )
 }
