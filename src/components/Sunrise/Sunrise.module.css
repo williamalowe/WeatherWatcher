@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-around;
   background: #ff990044;
-  /* background: #ff9900; */
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 
 }
 .section {
