@@ -4,6 +4,7 @@ import useWeatherData from '../../hooks/useWeatherData/useWeatherData';
 import LocationSearchbar from '../LocationSearchbar/LocationSearchbar';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import HourlyForecast from '../HourlyForecast/HourlyForecast';
+import ForecastList from '../ForecastList/ForecastList';
 
 const App = () => {
   const { weatherData, error, loading } = useWeatherData();
@@ -24,7 +25,9 @@ const App = () => {
               <CurrentWeather
                 data={weatherData}
               />
-              <HourlyForecast />
+              <ForecastList 
+                weatherData={weatherData}
+              />
             </div>
           </div>
       }
