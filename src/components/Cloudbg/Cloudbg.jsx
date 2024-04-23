@@ -2,7 +2,7 @@ import styles from './Cloudbg.module.css';
 
 const Cloudbg = () => {
   return (
-    <div id="background-wrap">
+    <div className={styles.background}>
       <div className={styles.x1}>
         <div className={styles.cloud}></div>
       </div>

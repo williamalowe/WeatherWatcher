@@ -1,16 +1,4 @@
-body {
-	background: var(--primary-blue);
-	color: #333;
-	font: 100% Arial, Sans Serif;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-#background-wrap {
+.background {
   bottom: 0;
 	left: 0;
 	padding-top: 50px;
