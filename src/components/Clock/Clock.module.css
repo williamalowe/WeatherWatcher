@@ -1,0 +1,11 @@
+.clock {
+width: 240px;
+}
+.clock>h3 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+.clock>p {
+  text-align: right;
+  font-size: 1.6rem;
+}

@@ -6,6 +6,7 @@ import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import HourlyForecast from '../HourlyForecast/HourlyForecast';
 import ForecastList from '../ForecastList/ForecastList';
 import Sunrise from '../Sunrise/Sunrise';
+import Clock from '../Clock/Clock';
 
 const App = () => {
   const { weatherData, error, loading } = useWeatherData();
@@ -19,7 +20,9 @@ const App = () => {
         loading ? <>Loading</> : 
           <div className={styles.content}>
             <div className={styles.main}>
-              {/* Main Content */}
+              <Clock 
+                date={weatherData.forecast.forecastday[0].date}
+              />
             </div>
             <div className={styles.sidebar}>
               <LocationSearchbar />
