@@ -1,7 +1,8 @@
+import CurrentIcon from '../CurrentIcon/CurrentIcon';
 import Header from '../Header/Header';
 import styles from './Card.module.css';
 
-const Card = ({ day }) => {
+const Card = ({ day, weatherData }) => {
   let displayColor = '';
   let displayDate = new Date();
 
@@ -31,6 +32,9 @@ const Card = ({ day }) => {
         <Header 
           title={day}
           date={displayDate}
+        />
+        <CurrentIcon 
+          icon={weatherData.condition.icon}
         />
       </div>
       <div className={styles.lower}>
