@@ -1,0 +1,32 @@
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+.card:hover {
+  z-index: 100;
+}
+.upper {
+  flex: 3;
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.lower {
+  flex: 1;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: #fff;
+}
+.lower>img {
+  transform: translateY(-1%);
+}
+.lower_content {
+  padding: 1rem;
+}
