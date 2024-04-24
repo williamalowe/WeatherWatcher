@@ -1,5 +1,6 @@
 import ConditionStatus from '../ConditionStatus/ConditionStatus';
 import CurrentIcon from '../CurrentIcon/CurrentIcon';
+import Forecast from '../Forecast/Forecast';
 import Header from '../Header/Header';
 import Temperature from '../Temperature/Temperature';
 import styles from './Card.module.css';
@@ -10,7 +11,7 @@ const Card = ({ day, weatherData, current }) => {
   let displayTemp = '';
   let displayTempTitle = ''
 
-  current ? displayTemp = current.temp_c : displayTemp = weatherData.avgtemp_c;
+  current ? displayTemp = current.temp_c : displayTemp = weatherData.day.avgtemp_c;
   if (day === 'today') {
     displayTempTitle = 'Current';
   } else {
@@ -45,17 +46,18 @@ const Card = ({ day, weatherData, current }) => {
           date={displayDate}
         />
         <CurrentIcon 
-          icon={weatherData.condition.icon}
+          icon={weatherData.day.condition.icon}
         />
         <Temperature 
-          min={weatherData.mintemp_c}
-          max={weatherData.maxtemp_c}
+          min={weatherData.day.mintemp_c}
+          max={weatherData.day.maxtemp_c}
           avg={displayTemp}
           display={displayTempTitle}
         />
         <ConditionStatus 
-          code={weatherData.condition.code}
+          code={weatherData.day.condition.code}
         />
+        
       </div>
       <div className={styles.lower}>
         {
@@ -63,6 +65,12 @@ const Card = ({ day, weatherData, current }) => {
           : displayColor === 'var(--primary-green)' ? <img src="/greenwave.svg" alt="" />
           : <img src="/orangewave.svg" alt="" />
         }
+        <div className={styles.lower_content} >
+          <Forecast
+            weatherData={weatherData}
+            color={displayColor}
+          />
+        </div>
       </div>
       
     </section>

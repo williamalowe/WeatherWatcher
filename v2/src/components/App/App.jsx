@@ -13,16 +13,16 @@ const App = () => {
           <div className={styles.content}>
             <Card 
               day={'today'}
-              weatherData={weatherData.forecast.forecastday[0].day}
+              weatherData={weatherData.forecast.forecastday[0]}
               current={weatherData.current}
             />
             <Card 
               day={'tomorrow'}
-              weatherData={weatherData.forecast.forecastday[1].day}
+              weatherData={weatherData.forecast.forecastday[1]}
             />
             <Card 
               day={'after'}
-              weatherData={weatherData.forecast.forecastday[2].day}
+              weatherData={weatherData.forecast.forecastday[2]}
             />
           </div> :
           <>Loading</>
