@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.header>h3 {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.header>h5 {
+  font-weight: 400;
+}

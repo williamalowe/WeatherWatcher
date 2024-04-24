@@ -5,9 +5,11 @@
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   border-radius: 0.5rem;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 .upper {
   flex: 3;
+  padding: 1rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }

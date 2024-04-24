@@ -5,17 +5,14 @@ const App = () => {
   return (
     <main className={styles.app}>
       <div className={styles.content}>
-        <Card 
-          color={'var(--primary-blue)'}
-          weatherData={''}
+      <Card 
+          day={'today'}
+        />
+      <Card 
+          day={'tomorrow'}
         />
         <Card 
-          color={'var(--primary-orange)'}
-          weatherData={''}
-        />
-        <Card 
-          color={'var(--primary-green)'}
-          weatherData={''}
+          day={'after'}
         />
       </div>
     </main>
