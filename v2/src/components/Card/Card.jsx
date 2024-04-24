@@ -1,10 +1,20 @@
 import CurrentIcon from '../CurrentIcon/CurrentIcon';
 import Header from '../Header/Header';
+import Temperature from '../Temperature/Temperature';
 import styles from './Card.module.css';
 
-const Card = ({ day, weatherData }) => {
+const Card = ({ day, weatherData, current }) => {
   let displayColor = '';
   let displayDate = new Date();
+  let displayTemp = '';
+  let displayTempTitle = ''
+
+  current ? displayTemp = current.temp_c : displayTemp = weatherData.avgtemp_c;
+  if (day === 'today') {
+    displayTempTitle = 'Current';
+  } else {
+    displayTempTitle = 'Average';
+  }
 
   if (day === 'tomorrow') {
     displayDate.setDate(displayDate.getDate() + 1);
@@ -36,13 +46,18 @@ const Card = ({ day, weatherData }) => {
         <CurrentIcon 
           icon={weatherData.condition.icon}
         />
+        <Temperature 
+          min={weatherData.mintemp_c}
+          max={weatherData.maxtemp_c}
+          avg={displayTemp}
+          display={displayTempTitle}
+        />
       </div>
       <div className={styles.lower}>
         {
           displayColor === 'var(--primary-blue)' ? <img src="/bluewave.svg" alt="" />
           : displayColor === 'var(--primary-green)' ? <img src="/greenwave.svg" alt="" />
           : <img src="/orangewave.svg" alt="" />
-
         }
       </div>
       

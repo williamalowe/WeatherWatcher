@@ -14,7 +14,7 @@ const App = () => {
             <Card 
               day={'today'}
               weatherData={weatherData.forecast.forecastday[0].day}
-              // currentData={weatherData.current}
+              current={weatherData.current}
             />
             <Card 
               day={'tomorrow'}

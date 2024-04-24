@@ -1,0 +1,23 @@
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.small  {
+  display: flex;
+  gap: 0.25rem;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+}
+.small>h5 {
+  color: rgba(0, 0, 0, 0.2);
+}
+.main>h3 {
+  font-size: 8rem;
+}
+.main>p {
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
