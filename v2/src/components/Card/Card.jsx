@@ -1,3 +1,4 @@
+import ConditionStatus from '../ConditionStatus/ConditionStatus';
 import CurrentIcon from '../CurrentIcon/CurrentIcon';
 import Header from '../Header/Header';
 import Temperature from '../Temperature/Temperature';
@@ -51,6 +52,9 @@ const Card = ({ day, weatherData, current }) => {
           max={weatherData.maxtemp_c}
           avg={displayTemp}
           display={displayTempTitle}
+        />
+        <ConditionStatus 
+          code={weatherData.condition.code}
         />
       </div>
       <div className={styles.lower}>

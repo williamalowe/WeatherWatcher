@@ -1,0 +1,194 @@
+[
+  {
+    "code": 1000,
+    "condition": "Looks like it's nice and sunny out! Go out and enjoy the day."
+  },
+  {
+    "code": 1003,
+    "condition": "Looks like it's a little bit cloudy outside. If you're going out, be sure to take a jacket just in case."
+  },
+  {
+    "code": 1006,
+    "condition": "Looks like it's cloudy out, be sure to take a jacket if you're heading out."
+  },
+  {
+    "code": 1009,
+    "condition": "Looks like it's cloudy out, be sure to take a jacket if you're heading out."
+  },
+  {
+    "code": 1030,
+    "condition": "Looks like it's misty outside. If you plan on driving, be sure to drive safely."
+  },
+  {
+    "code": 1063,
+    "condition": "Looks like there may be some patchy rain coming. Be sure to wear a jacket out."
+  },
+  {
+    "code": 1066,
+    "condition": "Looks like there may be some snow today. Be safe on the roads and be sure to stay warm!"
+  },
+  {
+    "code": 1069,
+    "condition": "Looks like there may be some snow today. Be safe on the roads and be sure to stay warm!"
+  },
+  {
+    "code": 1072,
+    "condition": "Looks like there may be icy rain today. Be safe on the roads and be sure to stay warm!"
+  },
+  {
+    "code": 1087,
+    "condition": "There could be some thunder today. Be sure to stay safe and avoid going outside if you can."
+  },
+  {
+    "code": 1114,
+    "condition": "Looks like there will be lots of snow and wind today. I recommend staying indoors if you can."
+  },
+  {
+    "code": 1117,
+    "condition": "Looks like there may be blizzards today! I recommend staying indoors if you can."
+  },
+  {
+    "code": 1135,
+    "condition": "Looks like there's some fog around around today. Be sure to be safe on the roads."
+  },
+  {
+    "code": 1147,
+    "condition": "Looks like there's some icy fog around around today. Be sure to be safe on the roads."
+  },
+  {
+    "code": 1150,
+    "condition": "Looks like there's some light drizzle today. Be sure to take a jacket and umbrella."
+  },
+  {
+    "code": 1153,
+    "condition": "Looks like there's some light drizzle today. Be sure to take a jacket and umbrella."
+  },
+  {
+    "code": 1168,
+    "condition": "Looks like there's some freezing drizzle today. If you have to go out, be sure to take a jacket and umbrella."
+  },
+  {
+    "code": 1171,
+    "condition": "Looks like there's heavy freezing drizzle today. Today looks like a good day to stay inside."
+  },
+  {
+    "code": 1180,
+    "condition": "Looks like there's some light rain today. Be sure to take a jacket and umbrella."
+  },
+  {
+    "code": 1183,
+    "condition": "Looks like there's some light rain today. Be sure to take a jacket and umbrella."
+  },
+  {
+    "code": 1186,
+    "condition": "Looks like there's some moderate rain today. Be sure to take a jacket and umbrella if you have to go out."
+  },
+  {
+    "code": 1189,
+    "condition": "Looks like there's some light rain today. Be sure to take a jacket and umbrella."
+  },
+  {
+    "code": 1192,
+    "condition": "Looks like there's some heavy rain today. Probably best to stay dry inside today."
+  },
+  {
+    "code": 1195,
+    "condition": "Looks like there's some heavy rain today. Probably best to stay dry inside today."
+  },
+  {
+    "code": 1198,
+    "condition": "Looks like there's some freezing rain today. Probably best to stay warm and dry inside today."
+  },
+  {
+    "code": 1201,
+    "condition": "Looks like there's some moderate freezing rain today. Probably best to stay warm and dry inside today."
+  },
+  {
+    "code": 1204,
+    "condition": "Looks like there's some light sleet today, be safe on the slippery roads."
+  },
+  {
+    "code": 1207,
+    "condition": "Looks like there's some moderate sleet today, be safe on the slippery roads."
+  },
+  {
+    "code": 1210,
+    "condition": "Looks like there's some light snow today, be safe on the slippery roads."
+  },
+  {
+    "code": 1213,
+    "condition": "Looks like there's some light snow today, be safe on the slippery roads."
+  },
+  {
+    "code": 1216,
+    "condition": "Looks like there's some moderate snow today, be safe on the slippery roads."
+  },
+  {
+    "code": 1219,
+    "condition": "Looks like there's some moderate snow today, be safe on the slippery roads."
+  },
+  {
+    "code": 1222,
+    "condition": "Looks like there's some heavy snow today. Good day to stay inside with a hot chocolate."
+  },
+  {
+    "code": 1225,
+    "condition": "Looks like there's some heavy snow today. Good day to stay inside with a hot chocolate."
+  },
+  {
+    "code": 1237,
+    "condition": "Looks like there's some ice pellets today. Be safe outside today."
+  },
+  {
+    "code": 1240,
+    "condition": "Looks like there's some light rain today. Be sure to take a jacket and umbrella if you're heading out."
+  },
+  {
+    "code": 1243,
+    "condition": "Looks like there's some moderate rain today. If you have to go out, take a jacket and umbrella."
+  },
+  {
+    "code": 1246,
+    "condition": "Looks like there's some torrential rain today. Probably best to stay warm and dry inside."
+  },
+  {
+    "code": 1249,
+    "condition": "Looks like there's some light sleet showers today, be safe on the slippery roads."
+  },
+  {
+    "code": 1252,
+    "condition": "Looks like there's some heavy sleet showers today. Avoid going out if you can, otherwise be safe on the slippery roads."
+  },
+  {
+    "code": 1255,
+    "condition": "Looks like there's some light snow showers today, be safe on the slippery roads."
+  },
+  {
+    "code": 1258,
+    "condition": "Looks like there's some heavy snow showers today. Avoid going out if you can, otherwise be safe on the slippery roads."
+  },
+  {
+    "code": 1261,
+    "condition": "Looks like there's some light showers with snow pellets today. Avoid going out if you can, otherwise be safe on the slippery roads."
+  },
+  {
+    "code": 1264,
+    "condition": "Looks like there's some moderate showers with snow pellets today. Avoid going out if you can, otherwise be safe on the slippery roads."
+  },
+  {
+    "code": 1273,
+    "condition": "Looks like there's some light showers with thunder today. Be safe if you have to go outside."
+  },
+  {
+    "code": 1276,
+    "condition": "Looks like there's some light showers with thunder today. Avoid going outside if you can."
+  },
+  {
+    "code": 1279,
+    "condition": "Looks like there's some light snow with thunder today. Avoid going outside if you can."
+  },
+  {
+    "code": 1282,
+    "condition": "Looks like there's some moderate snow with thunder today. Avoid going outside if you can."
+  }
+]
