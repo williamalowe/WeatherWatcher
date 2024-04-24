@@ -3,6 +3,7 @@ import CurrentIcon from '../CurrentIcon/CurrentIcon';
 import Forecast from '../Forecast/Forecast';
 import Header from '../Header/Header';
 import Temperature from '../Temperature/Temperature';
+import { motion } from 'framer-motion';
 import styles from './Card.module.css';
 
 const Card = ({ day, weatherData, current }) => {
@@ -34,8 +35,17 @@ const Card = ({ day, weatherData, current }) => {
   }
   
   return (
-    <section 
+    <motion.section 
       className={styles.card}
+      initial={{
+        scale: 1
+      }}
+      whileHover={{
+        scale: 1.1,
+      }}
+      transition={{
+        duration: 0.3
+      }}
     >
       <div 
         className={styles.upper}
@@ -73,7 +83,7 @@ const Card = ({ day, weatherData, current }) => {
         </div>
       </div>
       
-    </section>
+    </motion.section>
   )
 }
 
