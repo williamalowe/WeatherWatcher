@@ -1,13 +1,24 @@
 import Card from '../Card/Card';
 import styles from './App.module.css';
 import useWeatherData from '../../hooks/useWeatherData'
+import Loading from '../Loading/Loading';
+import Location from '../Location/Location';
+import { useState } from 'react';
 
 const App = () => {
-  const { weatherData, error, loading } = useWeatherData();
+  const [location, setLocation] = useState('Miami');
 
-  console.log(weatherData)
+  const { weatherData, error, loading } = useWeatherData(location);
+
   return (
     <main className={styles.app}>
+      <p>{location}</p>
+      {
+        !loading && 
+          <Location 
+            location={weatherData}
+          />
+      }
       {
         !loading ? 
           <div className={styles.content}>
@@ -25,9 +36,8 @@ const App = () => {
               weatherData={weatherData.forecast.forecastday[2]}
             />
           </div> :
-          <>Loading</>
+          <Loading />
       }
-      
     </main>
   )
 }
