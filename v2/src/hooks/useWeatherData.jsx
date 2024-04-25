@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-const useWeatherData = () => {
+const useWeatherData = (location) => {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=d1849d428c134446b4a30306242301&q&q=melbourne&days=7&aqi=no&alerts=no`, {mode: "cors"})
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=d1849d428c134446b4a30306242301&q&q=${location}&days=7&aqi=no&alerts=no`, {mode: "cors"})
       .then((response) => {
         if (response.status >= 400) {
           throw new Error("server error");
@@ -18,7 +18,8 @@ const useWeatherData = () => {
       .finally(() => {
         setLoading(false)
       })
-  }, []);
+      console.log('Hello from the hook')
+  }, [location]);
   
   return { weatherData, error, loading }
 };
