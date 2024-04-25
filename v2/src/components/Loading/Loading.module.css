@@ -1,0 +1,30 @@
+.loading>div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+.fill {
+  margin-left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+.loading>div:nth-child(1)>.fill {
+  background: var(--primary-blue)
+}
+.loading>div:nth-child(2)>.fill {
+  background: var(--primary-orange)
+}
+.loading>div:nth-child(3)>.fill {
+  background: var(--primary-green)
+}
+.loading>div:nth-child(4)>.fill {
+  background: var(--primary-blue)
+}
+.loading>div:nth-child(5)>.fill {
+  background: var(--primary-orange)
+}
+.loading>div:nth-child(6)>.fill {
+  background: var(--primary-green)
+}

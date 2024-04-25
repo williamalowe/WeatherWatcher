@@ -2,6 +2,7 @@ import Card from '../Card/Card';
 import styles from './App.module.css';
 import useWeatherData from '../../hooks/useWeatherData'
 import { transform } from 'framer-motion';
+import Loading from '../Loading/Loading';
 
 const App = () => {
   const { weatherData, error, loading } = useWeatherData();
@@ -26,9 +27,8 @@ const App = () => {
               weatherData={weatherData.forecast.forecastday[2]}
             />
           </div> :
-          <>Loading</>
+          <Loading />
       }
-      
     </main>
   )
 }
