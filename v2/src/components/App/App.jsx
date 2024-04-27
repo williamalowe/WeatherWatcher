@@ -6,7 +6,7 @@ import Location from '../Location/Location';
 import { useState } from 'react';
 
 const App = () => {
-  const [location, setLocation] = useState('Miami');
+  const [location, setLocation] = useState('Melbourne');
 
   const { weatherData, error, loading } = useWeatherData(location);
 
