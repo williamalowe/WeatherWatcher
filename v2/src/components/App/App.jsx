@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <main className={styles.app}>
-      <p>{location}</p>
+      {/* <p>{location}</p> */}
       {
         !loading && 
           <Location 
