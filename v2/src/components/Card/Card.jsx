@@ -8,12 +8,8 @@ import styles from './Card.module.css';
 
 const wrapper = {
   hidden: {
-    // opacity: 1,
-    // scale: 0
   },
   visible: {
-    // opacity: 1,
-    // scale: 1,
     transition: {
       delayChildren: 0.5,
       staggerChildren: 0.1

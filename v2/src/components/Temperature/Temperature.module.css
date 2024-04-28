@@ -21,3 +21,15 @@
   color: rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .main>h3 {
+    font-size: 4rem;
+  }
+  .small {
+    font-size: 1rem;
+  }
+  .main>p {
+    font-size: 0.8rem;
+  }
+}

@@ -6,7 +6,7 @@ import Location from '../Location/Location';
 import { useState } from 'react';
 
 const App = () => {
-  const [location, setLocation] = useState(null);
+  const [location, setLocation] = useState('Melbourne');
   let latitude = '';
   let longitude = '';
 
@@ -19,7 +19,6 @@ const App = () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(getLatLong);
   } else {
-    setLocation('Melbourne');
     alert ('Geolocation unavailable, default set to Melbourne');
   }
 
@@ -27,30 +26,49 @@ const App = () => {
 
   return (
     <main className={styles.app}>
-      <p>{location}</p>
+      {/* <p>{location}</p> */}
       {
-        !loading && 
-          <Location 
-            location={weatherData}
-          />
-      }
-      {
-        !loading ? 
-          <div className={styles.content}>
-            <Card 
-              day={'today'}
-              weatherData={weatherData.forecast.forecastday[0]}
-              current={weatherData.current}
-            />
-            <Card 
-              day={'tomorrow'}
-              weatherData={weatherData.forecast.forecastday[1]}
-            />
-            <Card 
-              day={'after'}
-              weatherData={weatherData.forecast.forecastday[2]}
-            />
-          </div> :
+        !loading ?
+          <>
+            {/* <Location 
+              location={weatherData}
+            /> */}
+            <div className={styles.content}>
+              <Card 
+                day={'today'}
+                weatherData={weatherData.forecast.forecastday[0]}
+                current={weatherData.current}
+              />
+              <Card 
+                day={'tomorrow'}
+                weatherData={weatherData.forecast.forecastday[1]}
+              />
+              <Card 
+                day={'after'}
+                weatherData={weatherData.forecast.forecastday[2]}
+              />
+            </div>
+            <div className={styles.mob_view}>
+              <div className={styles.mob_button}>
+                <button>
+                  +
+                </button>
+              </div>
+              <div className={styles.card}>
+                <Card 
+                  day={'today'}
+                  weatherData={weatherData.forecast.forecastday[0]}
+                  current={weatherData.current}
+                />
+              </div>
+              <div className={styles.mob_button}>
+                <button>
+                  -
+                </button>
+              </div>
+            </div>
+          </>
+          :
           <Loading />
       }
     </main>

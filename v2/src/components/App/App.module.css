@@ -17,6 +17,34 @@
 .app>p {
   color: red;
 }
+.mob_view {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+.card {
+  width: 90vw;
+  height: 90vh;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    display: none;
+  }
+  .mob_view {
+    display: flex;
+  }
+}
 
 @keyframes gradient {
 	0% {
