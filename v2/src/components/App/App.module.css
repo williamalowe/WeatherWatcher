@@ -21,12 +21,16 @@
   width: 100vw;
   height: 100vh;
   display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mob_content {
+  display: flex;
   padding: 1rem;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  overflow: hidden;
 }
 .card {
   width: 90vw;
@@ -50,6 +54,11 @@
   .app {
     display: flex;
     flex-direction: column;
+    gap: 0rem;
+  }
+  .app>p {
+    text-align: center;
+    font-size: 0.8rem;
   }
   .location {
     display: none;
