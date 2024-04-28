@@ -35,6 +35,7 @@
 .card {
   width: 90vw;
   height: 90vh;
+  display: flex;
 }
 .mob_button>button {
   width: 20px;
@@ -48,7 +49,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 @media screen and (max-width: 768px) {
   .app {

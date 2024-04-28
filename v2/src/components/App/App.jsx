@@ -25,7 +25,6 @@ const App = () => {
     } else {
       setMobCard(mobCard + 1);
     }
-    console.log(mobCard);
   }
   const prevCard = () => {
     if (mobCard === 0) {
@@ -33,7 +32,6 @@ const App = () => {
     } else {
       setMobCard(mobCard - 1);
     }
-    console.log(mobCard);
   }
 
   if (navigator.geolocation) {
