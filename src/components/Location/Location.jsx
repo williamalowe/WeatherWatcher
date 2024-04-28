@@ -3,7 +3,7 @@ import { faLocationDot  } from '@fortawesome/free-solid-svg-icons';
 import styles from './Location.module.css';
 
 const Location = ({ location }) => {
-  console.log(location)
+  
   return (
     <div className={styles.location}>
       <FontAwesomeIcon icon={faLocationDot} />
