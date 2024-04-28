@@ -6,10 +6,10 @@
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
-  color: var(--primary-orange);
+  color: var(--text-color);
 }
 .location>p {
-  color: var(--primary-orange);
+  color: var(--text-color);
 }
 @media screen and (max-width: 768px) {
   .location {

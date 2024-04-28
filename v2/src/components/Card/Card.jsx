@@ -44,7 +44,7 @@ const Card = ({ day, weatherData, current }) => {
   if (day === 'tomorrow') {
     displayDate.setDate(displayDate.getDate() + 1);
   }
-  if (day === 'after') {
+  if (day === 'later') {
     displayDate.setDate(displayDate.getDate() + 2);
   }
   
