@@ -4,9 +4,9 @@
   display: grid;
   place-content: center;
   gap: 1rem;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite; */
 }
 .content {
   width: 1440px;
@@ -16,6 +16,59 @@
 }
 .app>p {
   color: red;
+}
+.mob_view {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mob_content {
+  display: flex;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.card {
+  width: 90vw;
+  height: 90vh;
+}
+.mob_button>button {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: none;
+  color: var(--text-color);
+  background: var(--primary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .app>p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .location {
+    display: none;
+  }
+  .content {
+    display: none;
+  }
+  .mob_view {
+    display: flex;
+  }
 }
 
 @keyframes gradient {
