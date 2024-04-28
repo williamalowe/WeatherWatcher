@@ -45,7 +45,7 @@ const App = () => {
   return (
     <main className={styles.app}>
       {
-        !loading ?
+        loading ?
           <>
             <p>{location}</p>
             <div className={styles.location}>
