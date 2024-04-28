@@ -14,9 +14,6 @@
   display: flex;
   gap: 1rem;
 }
-.app>p {
-  color: red;
-}
 .mob_view {
   width: 100vw;
   height: 100vh;
@@ -43,8 +40,8 @@
   border-radius: 10px;
   padding: 0.5rem;
   border: none;
-  color: var(--text-color);
-  background: var(--primary-orange);
+  color: var(--primary-orange);
+  background: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
