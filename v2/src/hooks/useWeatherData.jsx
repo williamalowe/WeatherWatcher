@@ -18,7 +18,6 @@ const useWeatherData = (location) => {
       .finally(() => {
         setLoading(false)
       })
-      console.log('Hello from the hook')
   }, [location]);
   
   return { weatherData, error, loading }

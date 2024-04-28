@@ -6,13 +6,28 @@ import Location from '../Location/Location';
 import { useState } from 'react';
 
 const App = () => {
-  const [location, setLocation] = useState('Melbourne');
+  const [location, setLocation] = useState(null);
+  let latitude = '';
+  let longitude = '';
+
+  const getLatLong = (position) => {
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+    setLocation(latitude + ' ' + longitude);
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(getLatLong);
+  } else {
+    setLocation('Melbourne');
+    alert ('Geolocation unavailable, default set to Melbourne');
+  }
 
   const { weatherData, error, loading } = useWeatherData(location);
 
   return (
     <main className={styles.app}>
-      {/* <p>{location}</p> */}
+      <p>{location}</p>
       {
         !loading && 
           <Location 
