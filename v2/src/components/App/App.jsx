@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import useWeatherData from '../../hooks/useWeatherData'
 import Loading from '../Loading/Loading';
 import Location from '../Location/Location';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
@@ -45,7 +46,7 @@ const App = () => {
 
   return (
     <main className={styles.app}>
-      {/* <p>{location}</p> */}
+      <p>{location}</p>
       {
         !loading ?
           <>
@@ -65,7 +66,7 @@ const App = () => {
                 weatherData={weatherData.forecast.forecastday[1]}
               />
               <Card 
-                day={'after'}
+                day={'later'}
                 weatherData={weatherData.forecast.forecastday[2]}
               />
             </div>
@@ -76,25 +77,98 @@ const App = () => {
                 </button>
               </div>
               <div className={styles.card}>
-                {
-                  mobCard === 0 ?
-                  <Card 
-                    day={'today'}
-                    weatherData={weatherData.forecast.forecastday[0]}
-                    current={weatherData.current}
-                  />
-                  :
-                  mobCard === 1 ?
-                  <Card 
-                    day={'tomorrow'}
-                    weatherData={weatherData.forecast.forecastday[1]}
-                  />
-                  :
-                  <Card 
-                    day={'after'}
-                    weatherData={weatherData.forecast.forecastday[2]}
-                  />
-                }
+                <AnimatePresence mode="popLayout">
+                  {
+                    mobCard === 0 &&
+                    <motion.div
+                      initial={{
+                        rotate: -90,
+                        y: '100%',
+                        x: '-100%'
+                      }}
+                      animate={{
+                        rotate: 0,
+                        y: 0,
+                        x: 0
+                      }}
+                      exit={{
+                        rotate: 90,
+                        y: '100%',
+                        x: '100%'
+                      }}
+                      transition={{
+                        type: "spring", 
+                        bounce: 0
+                      }}
+                    >
+                      <Card 
+                        day={'today'}
+                        weatherData={weatherData.forecast.forecastday[0]}
+                        current={weatherData.current}
+                      />
+                    </motion.div>
+                  }
+                </AnimatePresence>
+                <AnimatePresence mode="popLayout">
+                  {
+                    mobCard === 1 &&
+                    <motion.div
+                      initial={{
+                        rotate: -90,
+                        y: '100%',
+                        x: '-100%'
+                      }}
+                      animate={{
+                        rotate: 0,
+                        y: 0,
+                        x: 0
+                      }}
+                      exit={{
+                        rotate: 90,
+                        y: '100%',
+                        x: '100%'
+                      }}
+                      transition={{
+                        type: "spring", bounce: 0
+                      }}
+                    >
+                      <Card 
+                        day={'tomorrow'}
+                        weatherData={weatherData.forecast.forecastday[1]}
+                      />
+                    </motion.div>
+                  }
+                </AnimatePresence>
+                <AnimatePresence mode="popLayout">
+                  {
+                    mobCard === 2 &&
+                    <motion.div
+                      initial={{
+                        rotate: -90,
+                        y: '100%',
+                        x: '-100%'
+                      }}
+                      animate={{
+                        rotate: 0,
+                        y: 0,
+                        x: 0
+                      }}
+                      exit={{
+                        rotate: 90,
+                        y: '100%',
+                        x: '100%'
+                      }}
+                      transition={{
+                        type: "spring", bounce: 0
+                      }}
+                    >
+                      <Card 
+                        day={'later'}
+                        weatherData={weatherData.forecast.forecastday[2]}
+                      />
+                    </motion.div>
+                  }
+                </AnimatePresence>
               </div>
               <div className={styles.mob_button}>
                 <button onClick={nextCard}>
