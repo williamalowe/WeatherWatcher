@@ -33,9 +33,7 @@
 
 @media screen and (max-width: 768px) {
   .card {
+    min-width: 240px;
+  }
 
-  }
-  .upper {
-    
-  }
 }

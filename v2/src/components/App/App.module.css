@@ -32,11 +32,27 @@
   width: 90vw;
   height: 90vh;
 }
+.mob_button>button {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: none;
+  color: var(--text-color);
+  background: var(--primary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @media screen and (max-width: 768px) {
   .app {
     display: flex;
     flex-direction: column;
+  }
+  .location {
+    display: none;
   }
   .content {
     display: none;

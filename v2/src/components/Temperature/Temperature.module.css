@@ -23,8 +23,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .temperature {
+    gap: 0.5rem;
+  }
   .main>h3 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .small {
     font-size: 1rem;
