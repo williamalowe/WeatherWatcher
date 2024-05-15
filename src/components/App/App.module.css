@@ -4,9 +4,9 @@
   display: grid;
   place-content: center;
   gap: 1rem;
-  background-image: linear-gradient(45deg, #3b41c5, #a981bb, #ffc8a9);  
+  background-image: linear-gradient(45deg, #3b41c5, #a981bb, #ffc8a9);
   background-size: 300% 300%;
-	animation: gradient 10s ease infinite; 
+  animation: gradient 7s ease infinite;
 }
 .content {
   width: 1440px;
@@ -34,7 +34,7 @@
   height: 90vh;
   display: flex;
 }
-.mob_button>button {
+.mob_button > button {
   width: 20px;
   height: 20px;
   border-radius: 10px;
@@ -53,7 +53,7 @@
     flex-direction: column;
     gap: 0rem;
   }
-  .app>p {
+  .app > p {
     text-align: center;
     font-size: 0.8rem;
   }
@@ -69,13 +69,13 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

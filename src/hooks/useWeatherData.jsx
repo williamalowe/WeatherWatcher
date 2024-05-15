@@ -6,7 +6,10 @@ const useWeatherData = (location) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=d1849d428c134446b4a30306242301&q&q=${location}&days=7&aqi=no&alerts=no`, {mode: "cors"})
+    fetch(
+      `http://api.weatherapi.com/v1/forecast.json?key=d1849d428c134446b4a30306242301&q&q=${location}&days=7&aqi=no&alerts=no`,
+      { mode: "cors" },
+    )
       .then((response) => {
         if (response.status >= 400) {
           throw new Error("server error");
@@ -16,11 +19,11 @@ const useWeatherData = (location) => {
       .then((response) => setWeatherData(response))
       .catch((err) => setError(err))
       .finally(() => {
-        setLoading(false)
-      })
+        setLoading(false);
+      });
   }, [location]);
-  
-  return { weatherData, error, loading }
+
+  return { weatherData, error, loading };
 };
 
 export default useWeatherData;

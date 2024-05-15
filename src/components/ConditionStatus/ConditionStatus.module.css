@@ -2,7 +2,7 @@
   display: grid;
   place-items: center;
 }
-.condition>p {
+.condition > p {
   font-size: 1.2rem;
   width: 90%;
   text-align: center;
@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .condition>p {
+  .condition > p {
     font-size: 0.8rem;
     line-height: 1rem;
   }

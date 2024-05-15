@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import styles from './Temperature.module.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import styles from "./Temperature.module.css";
 
 const Temperature = ({ min, max, avg, display }) => {
   return (
@@ -18,7 +18,7 @@ const Temperature = ({ min, max, avg, display }) => {
         <FontAwesomeIcon icon={faArrowUp} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Temperature
+export default Temperature;

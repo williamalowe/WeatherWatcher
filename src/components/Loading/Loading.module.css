@@ -1,10 +1,10 @@
 .loading {
   width: 100vw;
-  height:  100vh;
+  height: 100vh;
   display: grid;
   place-items: center;
 }
-.loading>div {
+.loading > div {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -16,21 +16,21 @@
   border-radius: 50%;
   position: absolute;
 }
-.loading>div:nth-child(1)>.fill {
-  background: var(--primary-blue)
+.loading > div:nth-child(1) > .fill {
+  background: var(--primary-blue);
 }
-.loading>div:nth-child(2)>.fill {
-  background: var(--primary-orange)
+.loading > div:nth-child(2) > .fill {
+  background: var(--primary-orange);
 }
-.loading>div:nth-child(3)>.fill {
-  background: var(--primary-green)
+.loading > div:nth-child(3) > .fill {
+  background: var(--primary-green);
 }
-.loading>div:nth-child(4)>.fill {
-  background: var(--primary-blue)
+.loading > div:nth-child(4) > .fill {
+  background: var(--primary-blue);
 }
-.loading>div:nth-child(5)>.fill {
-  background: var(--primary-orange)
+.loading > div:nth-child(5) > .fill {
+  background: var(--primary-orange);
 }
-.loading>div:nth-child(6)>.fill {
-  background: var(--primary-green)
+.loading > div:nth-child(6) > .fill {
+  background: var(--primary-green);
 }
