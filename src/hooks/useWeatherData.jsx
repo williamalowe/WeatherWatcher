@@ -7,7 +7,7 @@ const useWeatherData = (location) => {
 
   useEffect(() => {
     fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=d1849d428c134446b4a30306242301&q&q=${location}&days=7&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=d1849d428c134446b4a30306242301&q&q=${location}&days=7&aqi=no&alerts=no`,
       { mode: "cors" },
     )
       .then((response) => {
